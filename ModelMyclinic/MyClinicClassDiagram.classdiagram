@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="bcba7802-45cd-44c8-83d0-3b9898894c33" name="MyClinicClassDiagram" linkedPackageId="866b6cd1-5b3e-445f-a57f-26bc5a05e8f3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="c326819d-2147-4998-9b37-73112ce6d638">
-      <profileInstance Id="19291a55-6c31-4a0c-9909-0d7775f908ea" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="8e109d7a-b4fa-47aa-85e7-f41d199ea030">
-      <profileInstance Id="ec8d2def-8831-4985-a6c3-6a7b9f5c354e" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="bcba7802-45cd-44c8-83d0-3b9898894c33" name="MyClinicClassDiagram" linkedPackageId="866b6cd1-5b3e-445f-a57f-26bc5a05e8f3" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <Interface Id="276b4885-9f46-4e6c-b91a-e13030fb6427" name="Clinic" isAbstract="false" isLeaf="false">
@@ -141,6 +127,20 @@
             <elementDefinition Id="7fc4fbf4-6fd3-4d51-914c-e99411e0fc81" />
           </interfaceRealization>
         </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="66e10f03-9c14-4c82-91b4-57154682c1ce" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f911feca-6634-4417-bc2d-64b3e476580e" />
+          </property>
+          <property Id="0007743b-1cc2-426e-9ab7-364a100b8d1a" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b1713c99-2d7b-4c92-b87f-5a61209823c0" />
+          </property>
+          <property Id="cceff06d-11dd-48b4-9199-3aebafd449ba" name="NumInsurance" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cc3360f3-71f8-4857-904a-7503007edba3" />
+          </property>
+          <property Id="f77a9ed1-6593-45df-b20c-1bc502b2a74b" name="Phone" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0ff52e77-65f5-455d-b283-07d8ab3d333d" />
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="3d38c6c9-5567-44b1-ae52-07cb35935231" name="GoClinic" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="e8304a64-48ba-45ca-99c2-cd2fdab6bb22" />
@@ -150,9 +150,6 @@
           </operation>
           <operation Id="c285c113-626f-48a7-9919-7b6927838648" name="DecideSomething" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="b36629ab-b288-4bee-b4f4-70d5085e44c6" />
-          </operation>
-          <operation Id="9cbb05b3-285b-4463-aa24-d0eaf363d75e" name="GoRegistry" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="70d5c775-3d42-40fb-bff0-e5c1eb2564be" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -170,5 +167,19 @@
   </packagedElements>
   <package Id="866b6cd1-5b3e-445f-a57f-26bc5a05e8f3" name="ModelMyclinic">
     <elementDefinition Id="547186e0-d82f-4475-9c0b-d49d9e77b887" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c326819d-2147-4998-9b37-73112ce6d638">
+        <profileInstance Id="19291a55-6c31-4a0c-9909-0d7775f908ea" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8e109d7a-b4fa-47aa-85e7-f41d199ea030">
+        <profileInstance Id="ec8d2def-8831-4985-a6c3-6a7b9f5c354e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
